@@ -16,6 +16,5 @@ set /p CLASS-NAME=State the name of the new Apex Class:
 :: =======================
 
 call sf apex generate class --name %CLASS-NAME% --output-dir ae\main\default\classes
-call sf apex generate class --name %CLASS-NAME%Test --output-dir ae\main\default\classes
 
 pause
