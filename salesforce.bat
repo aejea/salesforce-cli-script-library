@@ -14,11 +14,13 @@ echo -=Apex=-
 echo 1.  Create Apex Class
 echo 2.  Verify Apex Code - (Deploy, Scan, and Test)
 echo 3.  Run Anonymous Apex Code in the Current Org Context
+echo.
 echo -=Salesforce Orgs=-
 echo 4.  Open a List of Available Salesforce Orgs
 echo 5.  Create Salesforce Login
 echo 6.  Logout of a Salesforce Org
 echo 7.  Login to a Salesforce Org (by Org alias)
+echo.
 echo -=Release Management=-
 echo 8.  Retrieve a Metadata Component
 echo 9.  Retrieve a Metadata Manifest
@@ -26,9 +28,11 @@ echo 10. Deploy a Metadata Component
 echo 11. Deploy a Metadata Manifest (XML)
 echo 12. Perform a Destructive Change
 echo 13. Create Rehearse/Rollback Sandbox
+echo.
 echo -=SOQL=-
 echo 14. Set the Current Org Context
 echo 15. Perform a SOQL Query in the Current Org Context
+echo.
 echo -=MISC=-
 echo 16. Open a User Record
 echo 17. SObject Describe Analysis (search the schema)
