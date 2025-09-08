@@ -23,7 +23,7 @@ git checkout -b feature/%TYPE%/%MANIFEST%
 cls
 git checkout feature/%TYPE%/%MANIFEST%
 cls
-Retrieving from %ORG_ALIAS%...
+echo Retrieving from %ORG_ALIAS%...
 call sf project retrieve start --ignore-conflicts --target-org %ORG_ALIAS% --manifest manifest\%MANIFEST%.xml
 pause
 
