@@ -3,14 +3,14 @@
 :: ======================
 
 @echo off
-cd ..\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p SANDBOX-NAME=Sandbox name: 
-set /p ALIAS=Desired sandbox alias: 
+set /p SANDBOX-NAME=Sandbox name:
+set /p ALIAS=Desired sandbox alias:
 
 :: =====================
 :: = Kickoff Web Login =

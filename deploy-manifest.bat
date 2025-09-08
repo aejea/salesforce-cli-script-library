@@ -3,28 +3,28 @@
 :: ===========================
 
 @echo off
-cd ..\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p ORG_ALIAS=Org alias: 
-set /p MANIFEST=Jira Requirement (example: se-1234): 
-set /p RUN_UNIT_TESTS=Run local tests? (yes or no): 
-set /p DRY_RUN=Is this a dry run? (yes or no): 
+set /p ORG_ALIAS=Org alias:
+set /p MANIFEST=Jira Requirement (example: se-1234):
+set /p RUN_UNIT_TESTS=Run local tests? (yes or no):
+set /p DRY_RUN=Is this a dry run? (yes or no):
 
 :: =======================
 :: = Deploy the manifest =
 :: =======================
 
-if /i "%RUN_UNIT_TESTS%"=="no" ( 
+if /i "%RUN_UNIT_TESTS%"=="no" (
     if /i "%DRY_RUN%"=="no" (
         echo Deploying %MANIFEST% to %ORG_ALIAS%...
         call sf project deploy start ^
         --ignore-conflicts ^
         --target-org %ORG_ALIAS% ^
-        --manifest C:\Users\aejea\bin\salesforce-devops-center\manifest\%MANIFEST%.xml
+        --manifest C:\Users\%USERNAME%\bin\salesforce-devops-center\manifest\%MANIFEST%.xml
 
         pause
     )
@@ -40,7 +40,7 @@ if /i "%RUN_UNIT_TESTS%"=="no" (
         call sf project deploy start ^
         --ignore-conflicts ^
         --target-org %ORG_ALIAS% ^
-        --manifest C:\Users\aejea\bin\salesforce-devops-center\manifest\%MANIFEST%.xml ^
+        --manifest C:\Users\%USERNAME%\bin\salesforce-devops-center\manifest\%MANIFEST%.xml ^
         --dry-run
 
         pause
@@ -58,7 +58,7 @@ if /i "%RUN_UNIT_TESTS%"=="yes" (
         --test-level RunLocalTests ^
         --ignore-conflicts ^
         --target-org %ORG_ALIAS% ^
-        --manifest C:\Users\aejea\bin\salesforce-devops-center\manifest\%MANIFEST%.xml
+        --manifest C:\Users\%USERNAME%\bin\salesforce-devops-center\manifest\%MANIFEST%.xml
 
         pause
     )
@@ -75,7 +75,7 @@ if /i "%RUN_UNIT_TESTS%"=="yes" (
         --test-level RunLocalTests ^
         --ignore-conflicts ^
         --target-org %ORG_ALIAS% ^
-        --manifest C:\Users\aejea\bin\salesforce-devops-center\manifest\%MANIFEST%.xml ^
+        --manifest C:\Users\%USERNAME%\bin\salesforce-devops-center\manifest\%MANIFEST%.xml ^
         --dry-run
 
         pause

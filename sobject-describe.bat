@@ -3,15 +3,15 @@
 :: ==========================
 
 @echo off
-cd ..\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p ORG-ALIAS=Org alias: 
-set /p SOBJECT-NAME=SObject name: 
-set /p FILTER=Filter criteria: 
+set /p ORG-ALIAS=Org alias:
+set /p SOBJECT-NAME=SObject name:
+set /p FILTER=Filter criteria:
 
 :: ========================
 :: = Describe the SObject =

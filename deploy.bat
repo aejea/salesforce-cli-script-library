@@ -3,15 +3,15 @@
 :: ==========================
 
 @echo off
-cd ..\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p TARGET-ORG=Org alias: 
-set /p COMPONENT-TYPE=Enter the component type: 
-set /p COMPONENT-NAME=Enter the component name: 
+set /p TARGET-ORG=Org alias:
+set /p COMPONENT-TYPE=Enter the component type:
+set /p COMPONENT-NAME=Enter the component name:
 
 :: ===============
 :: = Deploy =

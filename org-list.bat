@@ -3,7 +3,7 @@
 :: ======================
 
 @echo off
-cd ..\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: =====================
 :: = Generate Org List =

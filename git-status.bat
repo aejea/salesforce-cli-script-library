@@ -3,13 +3,13 @@
 :: ====================
 
 @echo off
-cd C:\Users\aejea\bin\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p BRANCH-NAME=Branch name: 
+set /p BRANCH-NAME=Branch name:
 
 :: ===============================================================
 :: = Run git status for the specified branch;                    =

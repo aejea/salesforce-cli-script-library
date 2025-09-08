@@ -3,13 +3,13 @@
 :: ===================
 
 @echo off
-cd ..\salesforce-devops-center\ae\main\default\classes
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center\ae\main\default\classes
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p CLASS-NAME=Apex class: 
+set /p CLASS-NAME=Apex class:
 
 :: ======================
 :: = Open the Apex Code =

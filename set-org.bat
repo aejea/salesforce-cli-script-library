@@ -3,13 +3,13 @@
 :: ==========================
 
 @echo off
-cd ..\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p TARGET-ORG=Org alias: 
+set /p TARGET-ORG=Org alias:
 
 :: ==================================
 :: = Set the Default Salesforce Org =

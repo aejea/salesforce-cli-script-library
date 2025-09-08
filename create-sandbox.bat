@@ -3,14 +3,14 @@
 :: ========================
 
 @echo off
-cd C:\Users\aejea\bin\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p SANDBOX-ALIAS=Sandbox alias: 
-set /p SANDBOX-NAME=Sandbox name (must be 10 characters or less): 
+set /p SANDBOX-ALIAS=Sandbox alias:
+set /p SANDBOX-NAME=Sandbox name (must be 10 characters or less):
 
 :: ==================
 :: = Create Sandbox =

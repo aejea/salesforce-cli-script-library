@@ -3,13 +3,13 @@
 :: =====================
 
 @echo off
-cd ..\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p CLASS-NAME=State the name of the new Apex Class: 
+set /p CLASS-NAME=State the name of the new Apex Class:
 
 :: =======================
 :: = Create Apex Classes =

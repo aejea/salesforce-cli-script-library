@@ -3,7 +3,7 @@
 :: ===========================
 
 @echo off
-cd ..\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops-center
 
 :: ==================
 :: = Get User Input =
@@ -17,11 +17,25 @@ set /p MANIFEST=Manifest name (example: se-1234):
 :: = Retrieve the manifest =
 :: =========================
 
+git checkout dev
+if ERRORLEVEL NEQ 0 (
+    echo There was a problem executing this script...
+    pause
+    goto :end
+)
 git checkout -b feature/%TYPE%/%MANIFEST%
-if ERRORLEVEL 1 (
+IF %ERRORLEVEL% NEQ 0 (
+    echo Branch exists. Checking it out...
     git checkout feature/%TYPE%/%MANIFEST%
+    IF %ERRORLEVEL% NEQ 0 (
+        echo Failed to checkout existing branch.
+        pause
+        goto :end
+    )
 )
 pause
 cls
 call sf project retrieve start --ignore-conflicts --target-org %ORG_ALIAS% --manifest manifest\%MANIFEST%.xml
 pause
+
+:end

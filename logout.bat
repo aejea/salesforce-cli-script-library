@@ -3,13 +3,13 @@
 :: ======================
 
 @echo off
-cd ..\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p ORG_ALIAS=Org alias to logout of: 
+set /p ORG_ALIAS=Org alias to logout of:
 
 :: ==========
 :: = Logout =

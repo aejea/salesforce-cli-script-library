@@ -3,15 +3,15 @@
 :: ==================
 
 @echo off
-cd ..\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p TARGET-ORG=Org alias: 
-set /p COMPONENT-TYPE=Component type: 
-set /p COMPONENT-NAME=Component name: 
+set /p TARGET-ORG=Org alias:
+set /p COMPONENT-TYPE=Component type:
+set /p COMPONENT-NAME=Component name:
 
 :: ============
 :: = Retrieve =

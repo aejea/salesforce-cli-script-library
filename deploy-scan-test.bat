@@ -3,15 +3,15 @@
 :: ==========================
 
 @echo off
-cd ..\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p TARGET-ORG=Org alias: 
-set /p CLASS-NAME=Enter the name of the Apex Class you wish to deploy-scan-test: 
-set /p TEST-CLASS-NAME=Enter the name of the Apex Test Class you wish to deploy-scan-test: 
+set /p TARGET-ORG=Org alias:
+set /p CLASS-NAME=Enter the name of the Apex Class you wish to deploy-scan-test:
+set /p TEST-CLASS-NAME=Enter the name of the Apex Test Class you wish to deploy-scan-test:
 
 :: ===============
 :: = Deploy Code =
@@ -36,7 +36,7 @@ pause
 :: ==============
 
 echo Scanning Local %CLASS-NAME%...
-call sf code-analyzer run --target C:\Users\aejea\bin\salesforce-devops-center\ae\main\default\classes\%CLASS-NAME%.cls
+call sf code-analyzer run --target C:\Users\%USERNAME%\bin\salesforce-devops-center\ae\main\default\classes\%CLASS-NAME%.cls
 
 pause
 
@@ -45,7 +45,7 @@ pause
 :: =============
 
 echo Scanning Local %TEST-CLASS-NAME%...
-call sf code-analyzer run --target C:\Users\aejea\bin\salesforce-devops-center\ae\main\default\classes\%TEST-CLASS-NAME%.cls
+call sf code-analyzer run --target C:\Users\%USERNAME%\bin\salesforce-devops-center\ae\main\default\classes\%TEST-CLASS-NAME%.cls
 
 pause
 

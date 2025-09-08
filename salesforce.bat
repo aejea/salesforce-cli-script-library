@@ -55,103 +55,103 @@ if "%CHOICE%"=="16" goto :OPEN_USER
 if "%CHOICE%"=="17" goto :SOBJECT_DESCRIBE
 
 :CREATE_APEX_CLASS
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call create-apex.bat
 goto :menu
 
 :DEPLOY_SCAN_TEST
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call deploy-scan-test.bat
 goto :menu
 
 :RUN_APEX
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call run-apex.bat
 goto :menu
 
 :ORG_LIST
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call org-list.bat
 goto :menu
 
 :CREATE_LOGIN
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call create-login.bat
 goto :menu
 
 :LOGOUT
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call logout.bat
 goto :menu
 
 :LOGIN
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call open-org.bat
 goto :menu
 
 :RETRIEVE
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call retrieve.bat
 goto :menu
 
 :RETRIEVE_MANIFEST
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call retrieve-manifest.bat
 goto :menu
 
 :DEPLOY
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call deploy.bat
 goto :menu
 
 :DEPLOY_MANIFEST
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call deploy-manifest.bat
 goto :menu
 
 :DESTRUCTIVE
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call destructive.bat
 goto :menu
 
 :CREATE_DEV_SANDBOX
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call create-sandbox.bat
 goto :menu
 
 :SET_ORG
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call set-org.bat
 goto :menu
 
 :QUERY
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call query.bat
 goto :menu
 
 :OPEN_USER
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call open-user.bat
 goto :menu
 
 :SOBJECT_DESCRIBE
-cd C:\Users\aejea\bin\scripts
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call sobject-describe.bat
 goto :menu

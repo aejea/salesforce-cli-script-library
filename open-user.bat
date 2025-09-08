@@ -3,14 +3,14 @@
 :: ===================
 
 @echo off
-cd ..\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p ORG_ALIAS=Org alias: 
-set /p USER_ID=User Id: 
+set /p ORG_ALIAS=Org alias:
+set /p USER_ID=User Id:
 
 :: ===========================
 :: = Open User Detail Record =

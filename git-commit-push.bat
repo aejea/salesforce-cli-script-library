@@ -3,15 +3,15 @@
 :: ===========================
 
 @echo off
-cd C:\Users\aejea\bin\salesforce-devops-center
+cd C:\Users\%USERNAME%\bin\salesforce-devops=center
 
 :: ==================
 :: = Get User Input =
 :: ==================
 
-set /p BRANCH_NAME=Which branch? (leave empty for current branch): 
-set /p MESSAGE=What is the commit message? (must not be blank): 
-set /p DO_PUSH=Do you wish to push to the remote branch? (leave empty for no): 
+set /p BRANCH_NAME=Which branch? (leave empty for current branch):
+set /p MESSAGE=What is the commit message? (must not be blank):
+set /p DO_PUSH=Do you wish to push to the remote branch? (leave empty for no):
 
 :: =============================
 :: = Bounce is message is null =
