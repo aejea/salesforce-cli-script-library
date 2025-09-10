@@ -16,7 +16,6 @@ echo = Salesforce DevOps Panel =
 echo ===========================
 echo.
 echo -=Planning=-
-echo 0.  Cleanup from Last Release
 echo 1.  Inspect Salesforce Releases Dashboard
 echo 2.  Create Teams Post in DevOps Channel: "Release Readiness"
 echo 3.  Perform Quality Assurance on a Release Candidate
@@ -46,7 +45,7 @@ echo 20. Delete Local Manifests
 echo.
 
 REM Get User Input
-set /p CHOICE=Select a utility by number [0-5]:
+set /p CHOICE=Select a utility by number [1-5]:
 
 REM Choices
 if "%CHOICE%"=="0" goto :cleanup
