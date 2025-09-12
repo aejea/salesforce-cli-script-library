@@ -6,7 +6,7 @@ REM Title Card
 REM Initial Setup
 @echo off
 title Login to Salesforce Org
-cd C:\Users\%USERNAME%\bin\salesforce-devops=center
+cd C:\Users\%USERNAME%\bin\salesforce-devops-center
 cls
 
 REM Get User Input

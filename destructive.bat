@@ -6,7 +6,7 @@ REM Title Card
 REM Initial Setup
 @echo off
 title Destructive Deployment Utility
-cd C:\Users\%USERNAME%\bin\salesforce-devops=center
+cd C:\Users\%USERNAME%\bin\salesforce-devops-center
 cls
 
 REM Get User Input

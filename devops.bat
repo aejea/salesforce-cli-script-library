@@ -73,18 +73,9 @@ if "%CHOICE%"=="20" goto :deleteLocalManifests
 REM Delete ROLLBACK Sandbox
 :cleanup
 cls
-call sf org delete sandbox --name rollback --target-org prod
-pause
-REM Delete REHEARSE Sandbox
-cls
-call sf org delete sandbox --name rehearse --target-org prod
-pause
-REM Delete Old Release Manifest
-cls
-del C:\Users\%USERNAME%\bin\salesforce-devops-center\manifest\release.xml
-pause
-call sf update
-pause
+1. Delete the ROLLBACK Sandbox
+2. Delete the REHEARSE Sandbox
+3. Delete the release.xml (manifest\release.xml)
 goto :menu
 
 REM Inspect Salesforce Releases Dashboard

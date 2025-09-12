@@ -37,6 +37,9 @@ echo -=MISC=-
 echo 16. Open a User Record
 echo 17. SObject Describe Analysis (search the schema)
 echo.
+echo -=RELEASE MANAGEMENT=-
+echo 18. DevOps Utilities
+echo.
 
 set /p CHOICE=Select a utility by number [1-17]:
 
@@ -57,6 +60,7 @@ if "%CHOICE%"=="14" goto :SET_ORG
 if "%CHOICE%"=="15" goto :QUERY
 if "%CHOICE%"=="16" goto :OPEN_USER
 if "%CHOICE%"=="17" goto :SOBJECT_DESCRIBE
+if "%CHOICE%"=="18" goto :DEV_OPS
 
 :CREATE_APEX_CLASS
 cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
@@ -159,3 +163,6 @@ cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library
 cls
 call sobject-describe.bat
 goto :menu
+
+:DEV_OPS
+cd C:\Users\%USERNAME%\bin\salesforce-cli-script-library

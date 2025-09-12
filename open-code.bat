@@ -3,7 +3,7 @@
 :: ===================
 
 @echo off
-cd C:\Users\%USERNAME%\bin\salesforce-devops=center\ae\main\default\classes
+cd C:\Users\%USERNAME%\bin\salesforce-devops-center\ae\main\default\classes
 
 :: ==================
 :: = Get User Input =
